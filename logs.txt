@@ -1,0 +1,104 @@
+2011-06-16T05:50:37+00:00 heroku[web.1]: State changed from created to starting
+2011-06-16T05:50:38+00:00 heroku[slugc]: Slug compilation finished
+2011-06-16T05:50:41+00:00 heroku[web.1]: Starting process with command: `thin -p 13596 -e production -R /home/heroku_rack/heroku.ru start`
+2011-06-16T05:50:44+00:00 app[web.1]: >> Thin web server (v1.2.6 codename Crazy Delicious)
+2011-06-16T05:50:44+00:00 app[web.1]: >> Maximum connections set to 1024
+2011-06-16T05:50:44+00:00 app[web.1]: >> Listening on 0.0.0.0:13596, CTRL+C to stop
+2011-06-16T05:50:50+00:00 heroku[web.1]: State changed from starting to up
+2011-06-16T05:50:56+00:00 heroku[rake.1]: State changed from created to starting
+2011-06-16T05:51:01+00:00 app[rake.1]: Awaiting client
+2011-06-16T05:51:01+00:00 app[rake.1]: Starting process with command `rake db:migrate`
+2011-06-16T05:51:02+00:00 heroku[rake.1]: Process exited
+2011-06-16T05:51:03+00:00 heroku[rake.1]: State changed from starting to complete
+2011-06-16T05:51:32+00:00 app[web.1]: 
+2011-06-16T05:51:32+00:00 app[web.1]: 
+2011-06-16T05:51:32+00:00 app[web.1]: Started GET "/" for 68.34.28.20 at 2011-06-15 22:51:32 -0700
+2011-06-16T05:51:32+00:00 app[web.1]:   Processing by UsersController#index as */*
+2011-06-16T05:51:32+00:00 app[web.1]: Completed   in 39ms
+2011-06-16T05:51:32+00:00 app[web.1]: 
+2011-06-16T05:51:32+00:00 app[web.1]: ActiveRecord::StatementInvalid (PGError: ERROR:  relation "users" does not exist
+2
+011-06-16T05:51:32+00:00 app[web.1]: : SELECT "users".* FROM "users"):
+2011-06-16T05:51:32+00:00 app[web.1]:   app/controllers/users_controller.rb:5:in `index'
+2011-06-16T05:51:32+00:00 app[web.1]: 
+2011-06-16T05:51:32+00:00 heroku[router]: GET furious-robot-328.heroku.com/ dyno=web.1 queue=0 wait=0ms service=135ms bytes=728
+2011-06-16T05:51:32+00:00 app[web.1]: 
+2011-06-16T06:07:32+00:00 heroku[slugc]: Slug compilation started
+2011-06-16T06:08:25+00:00 heroku[api]: Deploy 0463fea by vmukul@hotmail.com
+2011-06-16T06:08:25+00:00 heroku[api]: Release v5 created by vmukul@hotmail.com
+2011-06-16T06:08:25+00:00 heroku[web.1]: State changed from up to bouncing
+2011-06-16T06:08:25+00:00 heroku[web.1]: State changed from created to starting
+2011-06-16T06:08:26+00:00 heroku[slugc]: Slug compilation finished
+2011-06-16T06:08:29+00:00 heroku[web.1]: Starting process with command: `thin -p 5634 -e production -R /home/heroku_rack/heroku.ru start`
+2011-06-16T06:08:32+00:00 app[web.1]: >> Thin web server (v1.2.6 codename Crazy Delicious)
+2011-06-16T06:08:32+00:00 app[web.1]: >> Maximum connections set to 1024
+2011-06-16T06:08:32+00:00 app[web.1]: >> Listening on 0.0.0.0:5634, CTRL+C to stop
+2011-06-16T06:08:35+00:00 heroku[web.1]: State changed from starting to up
+2011-06-16T06:08:44+00:00 heroku[rake.2]: State changed from created to starting
+2011-06-16T06:08:54+00:00 app[rake.2]: Awaiting client
+2011-06-16T06:08:54+00:00 heroku[rake.2]: 
+State changed from starting to up
+2011-06-16T06:08:56+00:00 app[rake.2]: Starting process with command `rake db:migrate`
+2011-06-16T06:08:57+00:00 heroku[rake.2]: Process exited
+2011-06-16T06:08:57+00:00 heroku[rake.2]: State changed from up to complete
+2011-06-16T06:09:13+00:00 heroku[web.1]: Stopping process with SIGTERM
+2011-06-16T06:09:13+00:00 app[web.1]: >> Stopping ...
+2011-06-16T06:09:14+00:00 heroku[web.1]: Process exited
+2011-06-16T06:09:18+00:00 app[web.1]: 
+2011-06-16T06:09:18+00:00 app[web.1]: 
+2011-06-16T06:09:18+00:00 app[web.1]: Started GET "/" for 68.34.28.20 at 2011-06-15 23:09:18 -0700
+2011-06-16T06:09:18+00:00 app[web.1]:   Processing by UsersController#index as */*
+2011-06-16T06:09:18+00:00 app[web.1]: Completed   in 43ms
+2011-06-16T06:09:18+00:00 app[web.1]: 
+2011-06-16T06:09:18+00:00 app[web.1]: ActiveRecord::StatementInvalid (PGError: ERROR:  relation "users" does not exist
+2011-06-16T06:09:18+00:00 app[web.1]: : SELECT "users".* FROM "users"):
+2011-06-16T06:09:18+00:00 app[web.1]:   app/controllers/users_controller.rb:5:in `index'
+2011-06-16T06:09:18+00:00 app[web.1]: 
+2011-06-16T06:09:18+00:00 app[web.1]: 
+2011-06-16T06:09:18+00:00 heroku[router]: GET furious-robot-328.heroku.com/ dyno=web.1 queue=0 wait=0ms service=125ms bytes=728
+2011-06-16T06:09:19+00:00 heroku[nginx]: GET / HTTP/1.1 | 68.34.28.20 | 965 | http | 500
+2011-06-16T06:14:33+00:00 app[web.1]: 
+2011-06-16T06:14:33+00:00 app[web.1]: 
+201
+1-06-16T06:14:33+00:00 app[web.1]: Started GET "/" for 68.34.28.20 at 2011-06-15 23:14:33 -0700
+2011-06-16T06:14:33+00:00 app[web.1]:   Processing by UsersController#index as */*
+2011-06-16T06:14:33+00:00 app[web.1]: Completed   in 2ms
+2011-06-16T06:14:33+00:00 app[web.1]: 
+2011-06-16T06:14:33+00:00 app[web.1]: ActiveRecord::StatementInvalid (PGError: ERROR:  relation "users" does not exist
+2011-06-16T06:14:33+00:00 app[web.1]:   app/controllers/users_controller.rb:5:in `index'
+2011-06-16T06:14:33+00:00 app[web.1]: : SELECT "users".* FROM "users"):
+2011-06-16T06:14:33+00:00 app[web.1]: 
+2011-06-16T06:14:33+00:00 app[web.1]: 
+2011-06-16T06:14:33+00:00 heroku[router]: GET furious-robot-328.heroku.com/ dyno=web.1 queue=0 wait=0ms service=8ms bytes=728
+2011-06-16T06:14:34+00:00 heroku[nginx]: GET / HTTP/1.1 | 68.34.28.20 | 965 | http | 500
+2011-06-16T07:15:40+00:00 heroku[web.1]: Idling
+2011-06-16T07:15:46+00:00 heroku[web.1]: State changed from up to down
+2011-06-16T07:15:46+00:00 heroku[web.1]: Stopping process with SIGTERM
+2011-06-16T07:15:46+00:00 app[web.1]: >> Stopping ...
+2011-06-16T07:15:47+00:00 heroku[web.1]: Process exited
+2011-06-16T14:46:09+00:00 heroku[rake.3]: State changed from created to starting
+2011-06-16T14:46:23+00:00 app[rake.3]: Awaiting client
+2011-06-16T14:46:23+00:00 app[rake.3]: Starting process with command `rake --trace db:migrate`
+2011-06-16T14:46:24+00:00 heroku[rake.3]: Process exited
+2011-06-16T1
+4:46:25+00:00 heroku[rake.3]: State changed from starting to complete
+2011-06-16T14:47:32+00:00 heroku[web.1]: Unidling
+2011-06-16T14:47:32+00:00 heroku[web.1]: State changed from created to starting
+2011-06-16T14:47:37+00:00 heroku[web.1]: Starting process with command: `thin -p 8029 -e production -R /home/heroku_rack/heroku.ru start`
+2011-06-16T14:47:39+00:00 app[web.1]: >> Thin web server (v1.2.6 codename Crazy Delicious)
+2011-06-16T14:47:39+00:00 app[web.1]: >> Maximum connections set to 1024
+2011-06-16T14:47:39+00:00 app[web.1]: >> Listening on 0.0.0.0:8029, CTRL+C to stop
+2011-06-16T14:47:41+00:00 heroku[web.1]: State changed from starting to up
+2011-06-16T14:47:50+00:00 app[web.1]: 
+2011-06-16T14:47:50+00:00 app[web.1]: 
+2011-06-16T14:47:50+00:00 app[web.1]: Started GET "/" for 144.160.226.53 at 2011-06-16 07:47:50 -0700
+2011-06-16T14:47:50+00:00 app[web.1]:   Processing by UsersController#index as */*
+2011-06-16T14:47:50+00:00 app[web.1]: Completed   in 44ms
+2011-06-16T14:47:50+00:00 app[web.1]: 
+2011-06-16T14:47:50+00:00 app[web.1]: ActiveRecord::StatementInvalid (PGError: ERROR:  relation "users" does not exist
+2011-06-16T14:47:50+00:00 app[web.1]: : SELECT "users".* FROM "users"):
+2011-06-16T14:47:50+00:00 heroku[router]: GET furious-robot-328.heroku.com/ dyno=web.1 queue=0 wait=0ms service=146ms bytes=728
+2011-06-16T14:47:50+00:00 app[web.1]:   app/controllers/users_controller.rb:5:in `index'
+2011-06-16T14:47:50+00:00 app[web.1]: 
+2011-06-16T14:47:50+00:00 app[web.1]: 
+2011-06-16T14:47:51+00:00 heroku[nginx]: GET / HTTP/1.1 | 144.160.226.53 | 965 | http | 500
